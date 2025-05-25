@@ -41,16 +41,23 @@
             text-shadow: 0px 0px 8px orange, 0px 0px 15px orange, 0px 0px 25px orange; 
             letter-spacing: 4.5px; 
         }
+
+        .music-player {
+            display: none; /* إخفاء المشغل */
+        }
     </style>
 </head>
 <body>
     <div class="image-container">
         <img src="https://pbs.twimg.com/media/GbE-jy7X0AEZLZo?format=jpg&name=large" alt="Discord Image">
     </div>
-    <audio autoplay loop>
-        <source src="https://www.youtube.com/embed/c0jCAzd7sTM?autoplay=1&loop=1&playlist=c0jCAzd7sTM" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
+    <!-- YouTube embedded music (autoplay and loop) -->
+    <div class="music-player">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/c0jCAzd7sTM?autoplay=1&loop=1&playlist=c0jCAzd7sTM" 
+            frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
     <div class="info" id="ip-info">
         <strong>IP: <span id="ip"></span></strong><br>
         <span><strong>City:</strong> <span id="city"></span></span><br>
@@ -60,10 +67,11 @@
         <span><strong>Organization:</strong> <span id="org"></span></span><br>
         <span><strong>Timezone:</strong> <span id="timezone"></span></span>
     </div>
+
     <div class="text">i am A7&lt;3 MR JOHN</div>
 
     <script>
-         fetch('https://ipinfo.io/json')
+        fetch('https://ipinfo.io/json')
         .then(response => response.json())
         .then(data => {
             delete data.readme;

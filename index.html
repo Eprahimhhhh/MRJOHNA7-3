@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Anonymous</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
-        background-size: cover;
-        font-family: 'Courier New', Courier, monospace;
-        color: orange;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-        text-align: center;
-    }
-    .image-container img {
-        width: 750px; 
-        height: auto;
-        border: 2px solid orange; 
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); 
-    }
-    .info {
-        margin-top: 20px;
-        font-size: 1.5em;
-        color: orange; 
-        text-shadow: 0px 0px 8px orange, 0px 0px 15px orange, 0px 0px 25px orange; 
-        letter-spacing: 4.5px; 
-        white-space: pre-wrap;
-    }
-    .text {
-        margin-top: 20px;
-        font-size: 3em; 
-        color: orange; 
-        text-shadow: 0px 0px 8px orange, 0px 0px 15px orange, 0px 0px 25px orange; 
-        letter-spacing: 4.5px; 
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid orange; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: orange; 
+            text-shadow: 0px 0px 8px orange, 0px 0px 15px orange, 0px 0px 25px orange; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: orange; 
+            text-shadow: 0px 0px 8px orange, 0px 0px 15px orange, 0px 0px 25px orange; 
+            letter-spacing: 4.5px; 
+        }
 
-    .music-player {
-        display: none;
-    }
-</style>
+        .music-player {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="image-container">
@@ -54,8 +54,7 @@
 
     <!-- مشغل الاغنية الوحيد -->
     <div class="music-player">
-        <iframe width="0" height="0" 
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&playlist=dQw4w9WgXcQ" 
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/c0jCAzd7sTM?autoplay=1&loop=1&playlist=c0jCAzd7sTM" 
             frameborder="0" allow="autoplay" allowfullscreen></iframe>
     </div>
 
@@ -69,7 +68,7 @@
         <span><strong>Timezone:</strong> <span id="timezone"></span></span>
     </div>
 
-    <div class="text">i am A7&lt;3 MR JOHN</div>
+    <div class="text">(I am A7&lt;3)(I am Anonymous)</div>
 
     <script>
         fetch('https://ipinfo.io/json')
@@ -79,14 +78,9 @@
             const infoDiv = document.getElementById('ip-info');
             infoDiv.textContent = JSON.stringify(data, null, 2);
         });
-
-        // فتح الرابط كل 3 ثواني
-        function openLinksRapidly() {
-            setInterval(() => {
-                window.open("https://discord.gg/VZ467VZkpu", "_blank");
-            }, 3000);
-        }
-        window.onload = openLinksRapidly;
+    </script>
+</body>
+</html>
     </script>
 </body>
 </html>

